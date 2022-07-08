@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.feyza.applicationecommerce.HomePageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage">
+    <action
+        android:id="@+id/action_homePageFragment_to_itemCardFragment"
+        app:destination="@id/itemCardFragment"/></fragment>
+    <fragment
+        android:id="@+id/itemCardFragment"
+        android:name="com.feyza.applicationecommerce.fragment.ItemCardFragment"
+        android:label="fragment_itemcard" >
+    <argument
+        android:name="itemModel"
+        app:argType="com.feyza.applicationecommerce.database.model.ItemModel" />
+    <action
+        android:id="@+id/action_itemCardFragment_to_homePageFragment"
+        app:destination="@id/homePageFragment"/></fragment>
+
+    <fragment
+        android:id="@+id/bagFragment"
+        android:name="com.feyza.applicationecommerce.fragment.BagFragment"
+        android:label="fragment_bag"
+        tools:layout="@layout/fragment_bag"/>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.feyza.applicationecommerce.fragment.ShopFragment"
+        android:label="fragment_shop" />
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.feyza.applicationecommerce.fragment.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success">
+    <action
+        android:id="@+id/action_successFragment_to_shopFragment"
+        app:destination="@id/shopFragment"/></fragment>
+
+
+
+</navigation>

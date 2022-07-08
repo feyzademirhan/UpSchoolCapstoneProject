@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SignUpFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="106dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/headTextColor"
+            android:textSize="@dimen/head_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameLineBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_four"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="@dimen/margin_four"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/nameLineText"
+            android:textColorHint="@color/faintTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                app:layout_constraintVertical_bias="0.102" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_four"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_four"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/emailText"
+            android:textColorHint="@color/faintTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameLineBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                app:layout_constraintVertical_bias="0.102" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_four"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/margin_four"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/passwordText"
+            android:textColorHint="@color/faintTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/accountTextLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailBox"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/textColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordLineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+            android:id="@+id/accountTextLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/background"
+        android:drawableEnd="@drawable/red_arrow"
+            android:text="@string/accountText"
+            android:textColor="@color/headTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordBox"
+            android:fontFamily="@font/roboto"
+
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_four"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="@dimen/margin_four"
+            android:backgroundTint="@color/primaryColor"
+            android:fontFamily="@font/roboto"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/background"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordBox"
+            app:layout_constraintVertical_bias="0.071" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

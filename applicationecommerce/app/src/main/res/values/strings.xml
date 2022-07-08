@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HiStylish</string>
+    <string name="home">Home</string>
+    <string name="shop">Shop</string>
+    <string name="bag">Bag</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+    <!-- Strings related to login -->
+
+    <string name="emailText">Email</string>
+    <string name="passwordText">Password</string>
+    <string name="forgotText">Forgot your password?</string>
+    <string name="log_in">LOGIN</string>
+    <string name="nameLineText">Name</string>
+    <string name="accountText">Already have an account?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sendText">SEND</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>
